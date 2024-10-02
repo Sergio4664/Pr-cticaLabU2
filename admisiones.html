@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admisiones - Instituto Tecnológico Nacional de México</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        .video-container {
+            margin-bottom: 30px;
+        }
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        form input, form label {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        form input[type="submit"] {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+        form input[type="submit"]:hover {
+            background-color: #004d99;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Proceso de Admisión</h1>
+    </header>
+
+    <section>
+        <h2>Video de Información sobre Admisiones</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/53zoKF8joCg?si=0zHs8BQ7PMTlnCkM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
+        </div>
+
+        <h2>Formulario de Admisión</h2>
+        <form action="procesar_formulario.php" method="POST">
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+    
+        <label for="domicilio">Domicilio:</label>
+        <input type="text" id="domicilio" name="domicilio" placeholder="Escribe tu domicilio" required>
+    
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" placeholder="Escribe tu edad" required>
+    
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="Escribe tu correo personal" required>
+    
+    <input type="submit" value="Enviar Solicitud">
+</form>
+
+    </section>
+</body>
+</html>

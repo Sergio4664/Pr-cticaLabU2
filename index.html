@@ -1,0 +1,186 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Técnologico Nacional de México</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #27ae60;
+        }
+        header {
+            background-color: #ecf0f1;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            color: #27ae60;;
+        }
+         header img {
+            width: 120px; /* Ajusta el tamaño de la imagen */
+            position: absolute; /* Para posicionamiento absoluto */
+            top: 0; /* Posiciona la imagen en la parte inferior */
+            left: 0; /* Posiciona la imagen en la esquina izquierda */
+            margin: 10px; 
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            font-weight: 700;
+        }
+        nav {
+            background-color: #0066cc;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+        .hero {
+            background-image: url('entrada.webp');
+            background-size: cover;
+            background-position: center;
+            height: 1000px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h2 {
+            font-size: 4em;
+            background-color: rgba(0, 77, 153, 0.7);
+            padding: 10px 20px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+        .content div {
+            background-color: white;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content div img {
+            width: 40%;
+            border-radius: 60px;
+        }
+        .content div h3 {
+            color: #004d99;
+            margin-top: 15px;
+        }
+        footer {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        footer p {
+            margin: 0;
+        }
+        #contacto {
+            background-color: #0066cc;
+            padding: 40px 0;
+            color: white;
+        }
+        #contacto h2 {
+            margin-bottom: 30px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .social-icons a img {
+            width: 40px;
+            transition: transform 0.3s;
+        }
+        .social-icons a:hover img {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Instituto Técnologico Nacional de México</h1>
+        <a href="https://www.tecnm.mx/">
+        <img src="tec.png">
+        </a>
+        <p>Bienvenidos a la página web del Técnologico Nacional de México campus Tuxtepec</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#carreras">Carreras</a>
+        <a href="#admisiones">Admisiones</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section class="hero">
+        <h2> El instituto cuenta con un equipo docente altamente calificado que guía a los estudiantes en su formación académica y profesional. La misión del Tecnológico de Tuxtepec es formar profesionales competentes y comprometidos con su entorno, capaces de enfrentar los retos del mundo laboral y contribuir al bienestar de la sociedad.</h2>
+    </section>
+
+    <section id="carreras">
+        <h2>Ingenerias más demandadas</h2>
+        <div class="content">
+            <div>
+                <img src="sistemas.png" alt="Ingenería en Sistemas Computacionales">
+                <h3>Ingenería en Sistemas Computacionales</h3>
+                <p>"¡Despierta tu ingenio! En Ingeniería en Sistemas, transformamos ideas en realidades. Únete a nosotros y sé el arquitecto del futuro digital."</p>
+            </div>
+            <div>
+                <img src="civil.jfif">
+                <h3>Ingenieria Civil</h3>
+                <p>"¡Haz realidad tus sueños! En Ingeniería Civil, diseñamos y construimos el mundo que nos rodea. Únete a nosotros y deja tu huella en cada estructura."</p>
+            </div>
+            <div>
+                <img src="https://www.university-image.com/business.jpg">
+                <h3>Ingeneria informartica</h3>
+                <p>"¡Conéctate con el futuro! En Informática, transformamos datos en decisiones. Únete a nosotros y sé parte de la revolución digital."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="admisiones">
+        <h2>Admisiones</h2>
+        <p>Conoce nuestro proceso de admisiones y da el primer paso hacia un futuro brillante en nuestra institución.</p>
+        <p><a href="admisiones.html" style="color: #004d99; text-decoration: underline;">Más información aquí</a></p>
+    </section>
+
+        <section id="contacto">
+        <h2>Contacto</h2>
+        <div class="social-icons">
+            <!-- Enlace a Facebook -->
+            <a href="https://www.facebook.com/tecnologicode.tuxtepec" alt="Facebook">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+            <!-- Enlace a Gmail -->
+            <a href="mailto:difusion@tuxtepec.tecnm.mx">
+                <img src="gmail.png" alt="Gmail">
+            </a>
+            <!-- Enlace a X (anteriormente Twitter) -->
+            <a href="https://api.whatsapp.com/send?phone=%2B522871104437&context=ARBlMgNsApCDpfL9eDy8DLS_638Rb4YDaCyNNt1DPY_zEbFzDr26cpRk4CTnSLBanqRKbpVDhjOgjqaJvcEuGGK1EN0EUVgd_mjfw4JsdvlgNPkuEVs-z3J4rppNp1tWOS_nKbYadsRAZbxvADaNSI4PwQ&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawFql09leHRuA2FlbQIxMAABHeESPs0v4OT_OLggaSvt771Z5m3X0l7L50Oz231RdLYEPHcvL4NMkRTiTw_aem_eTL4tS9DnaMq4L_1XrnLwA" target="_blank">
+                <img src="whats.png" alt="Whatsapp">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Ittux. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
